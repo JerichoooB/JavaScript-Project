@@ -361,7 +361,7 @@
            <h1 class="name">Jericho Balayog D.</h1>
            <p class="post">Frontend developer/Student</p>
         </div>
-       <nav class="navbar">
+       <nav class="navbar" id="myNavbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -443,12 +443,21 @@
     <div id="container"></div>
     <script>
 
+        function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "myNavbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "myNarvbar";
+  }
+}
         const person = {
   firstName: "Jericho",
   lastName: "Balayog",
   age: 17,
   eyeColor: "brown"
 };
+
         const scrollActive = () =>{
             const scrollDown = window.scrollY
 
